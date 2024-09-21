@@ -1,7 +1,14 @@
 from fastapi import FastAPI
 
 
-app = FastAPI()
+APPNAME = "Terminal"
+APPDESCRIPTION="Blog Website"
+
+
+app = FastAPI(
+        title=APPNAME,
+        description=APPDESCRIPTION,
+    )
 
 
 @app.get("/")
